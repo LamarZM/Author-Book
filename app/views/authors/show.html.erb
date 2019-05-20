@@ -1,17 +1,19 @@
 <p> <%= link_to "Back", authors_path %> </p>
+
 <h1>
-
-<%= @author.first_name + " " + @author.last_name  %>
+<%= @author.first_name %>
 </h1>
+<h1>
+<%= @author.last_name %>
+</h1>
+<h1>
+<%= @author.location%>
+</h1>
+<h2>
+<%= @author.nickname%>
+</h2>
 
-<p>
 
-
-
-
-</p>
-
-<p>
 
 <%= link_to 'Edit', edit_author_path(@author) %>
 <%= link_to 'Destroy this author!', author_path(@author), method: :delete %>
