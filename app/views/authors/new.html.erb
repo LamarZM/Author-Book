@@ -1,0 +1,6 @@
+<h1> Authors </h1>
+<%= form_for @author, url: {action: "create"} do |f| %>
+    <%= f.text_field :first_name %>
+    <%= f.text_field :last_name %>
+    <%= f.submit "Save" %>
+    <% end %>
