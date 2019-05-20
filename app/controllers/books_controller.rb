@@ -37,7 +37,7 @@ def update
 end
 
 def book_params
-    params.require(:book).permit(:title)
+    params.require(:book).permit(:title, :original_language, :print_date)
 end
 end
 
